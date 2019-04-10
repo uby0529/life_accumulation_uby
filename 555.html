@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//   var msg="get-element-by-id";
+//   msg=msg.split("-");
+//   for(var i of msg){
+  //遍历数组获取到四个元素
+//     arr1=msg[0];
+//     arr2=msg[1];
+//     arr3=msg[2];
+//     arr4=msg[3];
+  
+  //对首字母进行大写其余字母进行小写
+// var first=arr1.slice(0,1);
+//   first=first.toUpperCase();
+//   var last=arr1.slice(1);
+//   last=last.toLowerCase();
+//   resulte=first+last;
+//   // console.log(resulte);
+
+//重复操作 代码繁琐 不易维护
+//   var first1=arr2.slice(0,1);
+//   first1=first1.toUpperCase();
+//   var last1=arr2.slice(1);
+//   last1=last1.toLowerCase();
+//   resulte1=first1+last1;
+
+//   var first2=arr3.slice(0,1);
+//   first2=first2.toUpperCase();
+//   var last2=arr3.slice(1);
+//   last2=last2.toLowerCase();
+//   resulte2=first2+last2;
+
+
+//   var first3=arr4.slice(0,1);
+//   first3=first3.toUpperCase();
+//   var last3=arr4.slice(1);
+//   last3=last3.toLowerCase();
+//   resulte3=first3+last3;
+
+// 创建一个空的数组 往里边添加转好的字符串
+//   var  arr=new Array();
+//   arr.push(resulte);
+//   arr.push(resulte1);
+//   arr.push(resulte2);
+//   arr.push(resulte3);
+//   将数组进行空字符拼接
+//   var msg1=arr.join("");
+//   console.log(msg1);
+//   }  
+
+
+
+
+
+
+//把一句英文所有的单词首字母转为大写
+var msg='get-element-by-id'; 
+//按照空格切割字符串
+var arr=msg.split("-");
+//遍历数组————每一个数组元素
+for(var i=0;i<arr.length;i++){
+  //截取arr[i]的首字母
+  var begin=arr[i].slice(0,1);
+  //截取arr[i]剩余的字母
+  var last=arr[i].slice(1);
+  //首字母转大写，其它的转小写
+  begin=begin.toUpperCase();
+  last=last.toLowerCase();
+  //把拼接的结果，替换数组中当前的值
+  arr[i]=begin+last; //
+}
+//console.log(arr);
+//把数组转成字符串
+console.log(arr.join(""));
+  </script>
+</body>
+</html>
